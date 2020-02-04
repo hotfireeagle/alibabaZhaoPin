@@ -10,3 +10,13 @@
     flex-grow: 1;
   }
 }
+.flexRowCC {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}

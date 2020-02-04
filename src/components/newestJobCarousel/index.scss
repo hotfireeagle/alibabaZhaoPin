@@ -1,0 +1,20 @@
+.NewestJobCarouselWrapper {
+  position: relative;
+  height: 100%;
+  border: 1px solid green;
+  .header {
+    height: 50px;
+  }
+  .carouselWrapper {
+    position: absolute;
+    border: 1px solid yellow;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    .positionList {
+      position: absolute;
+    }
+  }
+}
