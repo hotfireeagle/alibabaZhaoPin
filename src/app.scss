@@ -20,3 +20,43 @@
   display: flex;
   flex-direction: column;
 }
+.flexRowC {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flexColumnCC{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.flexg, .flexG {
+  flex-grow: 1;
+}
+.themeColor {
+  color: #ffa204;
+}
+button {
+  outline: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+input {
+  background: none;
+  outline: none;
+}
+input:focus {
+  border: none;
+}
+.greyFont {
+  color: #999;
+}
+.paddinglr14 {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.ano {
+  text-decoration: none;
+}

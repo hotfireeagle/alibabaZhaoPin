@@ -1,20 +1,36 @@
 .NewestJobCarouselWrapper {
   position: relative;
   height: 100%;
-  border: 1px solid green;
   .header {
     height: 50px;
+    border-bottom: 1px solid rgba(31,56,88,0.06);
+    font-size: 14px;
   }
   .carouselWrapper {
     position: absolute;
-    border: 1px solid yellow;
     top: 50px;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 14px;
     overflow: hidden;
     .positionList {
       position: absolute;
+      width: 100%;
+      box-sizing: border-box;
+      .positionItem {
+        font-size: 14px;
+        width: 100%;
+        .jobName {
+          color: #3C99D8;
+          width: 50%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          text-align: left;
+          flex-grow: 0;
+          flex-shrink: 0;
+        }
+      }
     }
   }
 }

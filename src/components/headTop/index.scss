@@ -1,10 +1,41 @@
 .headTopComponentWrapper {
+  height: 52px;
   background: #2C2F33;
   .headTopContentWrapper {
     width: 1000px;
+    height: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    .logo {
+      width: 123px;
+      height: 20px;
+      margin-right: 86px;
+    }
+    .paddinglr15 {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ffa204;
+    }
+    .span12 {
+      font-size: 12px;
+    }
+    .mr16 {
+      margin-right: 16px;
+    }
+    .mr5 {
+      margin-right: 5px;
+    }
+    .pl3 {
+      padding-left: 3px;
+      padding-right: 3px;
+      font-size: 12px;
+    }
   }
 }

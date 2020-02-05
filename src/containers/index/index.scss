@@ -1,13 +1,88 @@
 .indexPageContainer {
+  position: relative;
+  .bgColor {
+    background: #000;
+    margin-bottom: 10px;
+  }
   .banner {
     width: 100%;
     height: auto;
     max-height: 478px;
+    opacity: .6;
+  }
+  .absoluteSearch {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    .slogan {
+      font-size: 34px;
+      color:#fff;
+      margin-bottom: 38px;
+      line-height: 48px;
+    }
+    .searchWrapper {
+      width: 490px;
+      height: 60px;
+      padding: 0 5px;
+      position: relative;
+      margin-bottom: 16px;
+      .searchInput {
+        width: 368px;
+        height: 28px;
+        padding: 6px 10px;
+        border-radius: 3px;
+        background: #fff;
+        border: 1px solid #eee;
+      }
+      .searchBtn {
+        width: 92px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        background: #ffa204;
+        margin-left: 10px;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      ::after {
+        content: '';
+        width: 520px;
+        height: 70px;
+        position: absolute;
+        background: #fff;
+        opacity: 0.1;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+      }
+    }
+    .keyWord {
+      color: #fff;
+      font-size: 12px;
+    }
+    .keyWord+.keyWord {
+      margin-left: 12px;
+    }
   }
   .topicContainer {
+    align-items: flex-start;
     .left {
-      width: 420px;
-      border: 1px solid red;
+      width: 836px;
+      margin-right: 20px;
+      border: 1px solid #eee;
+      box-shadow: 0 0 15px 0 rgba(31,56,88,0.08);
+    }
+    .right {
+      img {
+        width: 310px;
+        height: 140px;
+        margin-bottom: 20px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 15px 0 rgba(31,56,88,0.08);
+      }
     }
   }
 }
