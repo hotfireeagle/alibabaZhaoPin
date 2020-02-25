@@ -24,6 +24,10 @@ class NewestJobCarouselComponent extends React.Component<IProps, IState> {
     { name: '前端开发10', position: '杭州', minute: 2 },
     { name: '前端开发11', position: '杭州', minute: 2 },
     { name: '前端开发1', position: '杭州', minute: 2 },
+    { name: '前端开发2', position: '杭州', minute: 2 },
+    { name: '前端开发3', position: '杭州', minute: 3 },
+    { name: '前端开发4', position: '杭州', minute: 4 },
+    { name: '前端开发5', position: '杭州', minute: 5 },
   ];                                             // 模拟数据，招聘职位列表
   private animationDuration = 60;                // 滚动的时间间隔
   private totalHeight = 0;                       // 总职位列表的高度
