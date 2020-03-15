@@ -1,6 +1,7 @@
-import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
-import './index.scss';
+import React from 'react'
+import { Link, withRouter } from 'react-router-dom'
+import * as loginService from '../../services/loginService'
+import './index.scss'
 
 
 /**
@@ -15,6 +16,9 @@ const generateClassName = (pathRoute: string, route: string, currentClass?: Arra
 }
 
 class HeadTopComponentInner extends React.Component<any> {
+
+  clickSign = () => loginService.show()
+
   public render() {
     return (
       <div className='headTopComponentWrapper'>
@@ -40,7 +44,7 @@ class HeadTopComponentInner extends React.Component<any> {
           <span className='flexg'></span>
           <div>
             <span className='span12 mr16'>欢迎来到阿里巴巴集团招聘</span>
-            <Link to='/login' className={generateClassName(this.props.location.pathname, '/login', ['span12'])}>登录</Link>
+            <Link to='/login' onClick={this.clickSign} className={generateClassName(this.props.location.pathname, '/login', ['span12'])}>登录</Link>
             <span className='pl3'>|</span>
             <Link to='/register' className={generateClassName(this.props.location.pathname, '/login', ['span12'])}>注册</Link>
           </div>
